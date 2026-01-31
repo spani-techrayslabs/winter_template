@@ -214,8 +214,17 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
+  .top-2 {
+    top: calc(var(--spacing) * 2);
+  }
   .top-\[2rem\] {
     top: 2rem;
+  }
+  .top-\[50\%\] {
+    top: 50%;
+  }
+  .top-\[50\] {
+    top: 50;
   }
   .right-0 {
     right: calc(var(--spacing) * 0);
@@ -225,6 +234,12 @@
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
+  }
+  .left-\[50\%\] {
+    left: 50%;
+  }
+  .left-\[50\] {
+    left: 50;
   }
   .z-3 {
     z-index: 3;
@@ -772,6 +787,9 @@
   .text-\[0\.9\] {
     color: 0.9;
   }
+  .text-\[0\.\] {
+    color: 0.;
+  }
   .text-\[2c3e50\] {
     color: 2c3e50;
   }
@@ -1123,6 +1141,12 @@
       content: var(--tw-content);
     }
   }
+  .before\:content-\[\'❄\'\] {
+    &::before {
+      --tw-content: '❄';
+      content: var(--tw-content);
+    }
+  }
   .hover\:scale-102 {
     &:hover {
       @media (hover: hover) {
@@ -1154,6 +1178,16 @@
     &:hover {
       @media (hover: hover) {
         text-decoration-line: underline;
+      }
+    }
+  }
+  .hover\:before\:content-\[\'❄\'\] {
+    &:hover {
+      @media (hover: hover) {
+        &::before {
+          --tw-content: '❄';
+          content: var(--tw-content);
+        }
       }
     }
   }

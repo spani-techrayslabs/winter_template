@@ -25,10 +25,10 @@
                         class="font-serif text-[1.8rem] font-light tracking-[2px] text-[#4a5f6d] flex items-center gap-[0.8rem] no-underline decoration-current decoration-solid decoration-auto">❄
                         WINTER</a>
                     <ul id="navLinks" class="md:flex list-outside list-image-none list-none">
-                        <li><a href="#home" class="text-gray-700 text-sm font-light relative p-6">HOME</a></li>
-                        <li><a href="#gallery" class="text-gray-700 text-sm font-light relative p-6">GALLERY</a></li>
-                        <li><a href="#about" class="text-gray-700 text-sm font-light relative p-6">ABOUT</a></li>
-                        <li><a href="#contact" class="text-gray-700 text-sm font-light relative p-6">CONTACT</a></li>
+                        <li><a href="#home" class="text-gray-700 text-sm font-light p-6 hover:before:content-['❄'] top-0 left-[50%] text-[#7ba8bd] ">HOME</a></li>
+                        <li><a href="#gallery" class="text-gray-700 text-sm font-light  p-6 hover:before:content-['❄'] top-0 left-[50%] text-[#7ba8bd] ">GALLERY</a></li>
+                        <li><a href="#about" class="text-gray-700 text-sm font-light  p-6 hover:before:content-['❄'] top-0 left-[50%] text-[#7ba8bd] ">ABOUT</a></li>
+                        <li><a href="#contact" class="text-gray-700 text-sm font-light p-6 hover:before:content-['❄'] top-0 left-[50%] text-[#7ba8bd] ">CONTACT</a></li>
 
                     </ul>
                     <div class="menu md:hidden p-2 text-[#4a5f6d] cursor-pointer text-[1.5rem] block">
@@ -43,7 +43,7 @@
 
 
     </header>
-    <div class="menu-options transform duration-500 mt-20 hidden  relative p-8  bg-white/95" id="">
+    <div class="transform duration-500 mt-20 hidden  relative p-8  bg-white/95" id="">
         <ul class="flex flex-col gap-4 text-sm">
             <li class="hover:cursor-pointer"><a href="#home">HOME</a></li>
             <li class="hover:cursor-pointer"><a href="#gallery">GALLERY</a></li>
@@ -67,7 +67,7 @@
 
 
         </section>
-        <section class="text-center py-12 px-8">
+        <section class="text-center py-12 px-8" >
             <div class="inline-flex gap-10 flex-wrap justify-center">
                 <button
                     class="active:text-[#7ba8bd] bg-none border-0 font-sans text-[0.95rem] hover:underline text-[#4a5f6d] cursor-pointer py-2 px-0 relative tracking-[1.5px] uppercase font-light"
@@ -92,13 +92,18 @@
             </div>
         </section>
         <!-- gallery section -->
-        <section id="gallery" class="max-w-350 mt-0 mr-auto mb-0 ml-auto p-8">
+        <section id="gallery" class="max-w-350 mt-0 mr-auto mb-0 ml-auto p-8 ">
             <!-- grid-rows-3 -->
             <div id="galleryGrid" class="grid  grid-cols-[repeat(auto-fill,minmax(320px,1fr))] gap-6 grid-flow-dense">
 
                 <div
                     class="relative overflow-hidden rounded-sm transform hover:scale-102 transition duration-200 row-span-2">
-                    <img src="mountains.jpeg" class="h-full w-full object-cover block" alt="mountains">
+                    <img src="mountains.jpeg" class="h-full w-full object-cover block " alt="mountains">
+                    <div class="absolute bottom-0 left-0 right-0 bg-[linear-gradient(to top, rgba(44,62,80,0.8))]">
+                        <h3 class="font-serif text-[1.3rem] text-[#ffffff] font-light mb-[0.3 rem]">Mountain Snow</h3>
+                        <p>Landscape</p>
+
+                    </div>
                 </div>
 
 
@@ -126,7 +131,7 @@
                     <img class="h-full w-full object-cover block" src="bonfire.jpeg" alt="mountains">
                 </div>
                 <div class="relative overflow-hidden rounded-sm transform hover:scale-102 transition duration-200">
-                    <img id="myImg" class="h-full w-full object-cover block" src="teach.jpeg" alt="learn">
+                    <img id="myImg" class="h-full w-full object-cover block" src="learning.jpeg" alt="learn">
                 </div>
                 <div class="relative overflow-hidden rounded-sm transform hover:scale-102 transition duration-200">
                     <img id="myImg" class="h-full w-full object-cover block" src="gift.jpeg" alt="mountains">
@@ -197,7 +202,7 @@
                                 Captured</div>
 
 
-                            <!-- transition-all[all 0.3s ease] -->
+                            
 
                         </div>
 
